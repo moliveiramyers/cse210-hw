@@ -9,9 +9,6 @@ class Program
         Random randomGenerator = new Random();
         int number = randomGenerator.Next(1, 101);
         int guess = -1;
-        //Ask user for guess
-        Console.Write("What is the magic number? ");
-
 
         // Hints for guess
         do 
