@@ -11,7 +11,7 @@ public class Journal()
     {
      // it will add from list to file   
      // all to same line
-       string prompt = _prompt.getRandomPrompt();
+       string prompt = _prompt.GetRandomPrompt();
        Console.WriteLine($"Prompt: {prompt}");
         string resonse = Console.ReadLine(); 
         _entries.Add(new Entry(resonse, prompt));

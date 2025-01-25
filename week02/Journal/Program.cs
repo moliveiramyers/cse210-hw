@@ -72,7 +72,7 @@ class Program
            Console.WriteLine("You've selected an invalid option.\nPlease, try again!\n ");
         }
 
-
+            //5. Quit
         } while( choice != "5"); //5. Quit
         Console.WriteLine("You have successfully quit the program! ");
 

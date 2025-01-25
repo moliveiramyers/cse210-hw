@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 
 public class Entry
 {
@@ -11,7 +12,7 @@ public class Entry
 
     public Entry(string response, string prompt)
     {
-
+        // Gathering al the details to be added into the file
         _promptText = prompt;
         _entryText = response;
         _dateTime = DateTime.Now;
