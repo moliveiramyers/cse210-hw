@@ -3,8 +3,8 @@ using System.IO.Compression;
 
 public class Fractions 
 {
-    private int _topValue = 0;
-    private int _bottomValue = 0;
+    private int _topValue;
+    private int _bottomValue;
 
     public Fractions()
     {
@@ -31,10 +31,19 @@ public class Fractions
 
     public string GetFractionString()
     {
+        if (_bottomValue == 1)
 
-        string text = $"{_topValue}/{_bottomValue}";
-        return text;
+        {
+            string text = $"{_topValue}";
+            return text;
+        }
 
+        else
+        {
+            string text = $"{_topValue}/{_bottomValue}";
+            return text;
+        }
+        
     }
 
     public double GetDecimalValue()
