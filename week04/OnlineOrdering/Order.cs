@@ -8,11 +8,6 @@ public class Order
     private List<String>_productsList = new List<string>(); 
     private double _total = 0;
 
-    public Order()
-    {
-        
-
-    }
 
     public void SetProductToList(Product product)
     {
@@ -26,7 +21,7 @@ public class Order
     public double Total(Customer customer)
     {
         
-        if (!customer.usaOrNot())
+        if (!customer.UsaOrNot())
         {
             _total += 35;
         }
@@ -38,7 +33,7 @@ public class Order
 
     }
 
-    public void packingLabel()
+    public void PackingLabel()
     {
         foreach (string item in _productsList)
         {
@@ -47,10 +42,10 @@ public class Order
         Console.WriteLine(Math.Round(_total,2 ));
     }
 
-    public void shippingLabel(Customer customer)
+    public void ShippingLabel(Customer customer)
     {
-        Console.WriteLine(customer.getCustomerName()) ;
-        Console.WriteLine(customer.getCustomerAddress());
+        Console.WriteLine(customer.GetCustomerName()) ;
+        Console.WriteLine(customer.GetCustomerAddress());
     }
 
 

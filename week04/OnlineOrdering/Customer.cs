@@ -14,19 +14,19 @@ public class Customer
         
 
     }
-    public string getCustomerName()
+    public string GetCustomerName()
     {
         return _customerName;
     }
 
-    public string getCustomerAddress()
+    public string GetCustomerAddress()
     {
         return _customerAddress;
     }
 
-    public bool usaOrNot()
+    public bool UsaOrNot()
     {
-        return _address.usaIdentifier();
+        return _address.UsaIdentifier();
     }
 
 }

@@ -20,10 +20,10 @@ class Program
         //Order Label
         Console.WriteLine("Packing Label: ");
         order1.Total(customer1);
-        order1.packingLabel();
+        order1.PackingLabel();
 
         //Shipping Address
-        order1.shippingLabel(customer1);
+        order1.ShippingLabel(customer1);
         Console.WriteLine();
     
     // Second order
@@ -41,10 +41,10 @@ class Program
         //Order Label
         Console.WriteLine("Packing Label: ");
         order2.Total(customer2);
-        order2.packingLabel();
+        order2.PackingLabel();
 
         //Shipping Address
-        order2.shippingLabel(customer2);
+        order2.ShippingLabel(customer2);
     
     }
 }

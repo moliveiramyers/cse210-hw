@@ -8,7 +8,6 @@ public class Product
     private int _quantity;
     private double _total;
 
-
     public Product(string productName, int productId, double productPrice, int quantity)
     {
         _productName = productName;

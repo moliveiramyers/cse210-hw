@@ -37,7 +37,7 @@ public class Address
         return _country;
     }
 
-    public bool usaIdentifier()
+    public bool UsaIdentifier()
     {
         if (_country == "USA")
         {
